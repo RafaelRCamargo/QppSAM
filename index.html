@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-png">
+
+    <title>QppSAM</title>
+</head>
+<body>
+    <div class="navBar">
+        <nav class="nav">
+            <div class="logo">
+                <h1 class="logo"><i class="fas fa-brain"></i> QppSAM</h1>
+            </div>
+            <ul class="navBar">
+                <a href="#">
+                    <li class="navLinks">Menu</li>
+                </a>
+                <a href="#">
+                    <li class="navLinks">Jogar</li>
+                </a>
+                <a href="#" onclick="gameOver(1)">
+                    <li class="navLinks">Reiniciar</li>
+                </a>
+                <a>
+                    <li class="navLinks">
+                        <div id="timer">00:00:00</div>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="menu">
+            <div class="section s1">
+                <h1 class="mainTitle">Quiz <span class="min"> para pessoas </span> <span class="super"> super
+                    </span>acima da média</h1>
+                <h1 class="subTitle"><i class="fas fa-minus"></i> Q<span class="min">pp</span><span
+                        class="super">S</span>AM</h1>
+                <button><a href="#jogar">Conheça!</a></button>
+            </div>
+
+            <div class="section s2" id="jogar">
+                <h1>Descrição:</h1>
+                <p class="sub">Quiz para pessoas Super Acima da Média (QppSAM) é um jogo desenvolvido para testar seus
+                    conhecimentos gerais. Este jogo
+                    pode ser considerado um body building do cérebro, com ele você aprenderá novos fatos e outras coisas
+                    interessantes!
+                </p>
+                <button onclick="jogar()">Jogar!</button>
+            </div>
+
+            <div class="section s3">
+                <h1 class="mainTitle">Análise dos jogadores, sobre o nosso jogo:</h1>
+                <div class="comContainer">
+                    <div class="comment">
+                        <p>
+                            "O jogo é muito divertido, e ao mesmo tempo educativo, eu acho."
+                        </p>
+                        <span>Jaílson Silva, 34 anos</span>
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            "Perguntas claras e objetivas, as vezes. Mas continua muito bom!"
+                        </p>
+                        <span>Ana Paula, 23 anos</span>
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            "O design do jogo é muito agradável, dá gosto de jogar, por uns 5 minutos."
+                        </p>
+                        <span>Luiza Pinto, 28 anos</span>
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            "Desafiador e ... <br> ... Instigante?"
+                        </p>
+                        <span>Matheus Costa, 42 anos</span>
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            "Um dos melhores jogos de Quizz que já joguei, mas também foi o primero."
+                        </p>
+                        <span>Jõao Pedro, 10 anos</span>
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            "Olha, um jogo bom, mas cheio de coisas extremamente irritantes."
+                        </p>
+                        <span>Felipe Santos, 6 anos</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="questions">
+
+            <div class="q q1">
+                <h1 class="question"><span class="qNumber"></span> Qual é o nome dado ao período em que dom Pedro II
+                    subiu ao poder?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Período Regencial</button>
+                    <button class="b" onclick="nxtQ('1')">Subida</button>
+                    <button class="c" onclick="nxtQ('2')">2º Reinado</button>
+                    <button class="d" onclick="nxtQ('3')">1º Reinado</button>
+                </div>
+            </div>
+
+            <div class="q q2">
+                <h1 class="question"><span class="qNumber"></span> Quanto é <br> √(3^2)?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">37</button>
+                    <button class="b" onclick="nxtQ('1')">5,987</button>
+                    <button class="c" onclick="nxtQ('2')">666</button>
+                    <button class="d" onclick="nxtQ('3')">3</button>
+                </div>
+            </div>
+
+            <div class="q q3">
+                <h1 class="question"><span class="qNumber"></span> _______ você não usa mouse, <br> Battistella?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Por quê</button>
+                    <button class="b" onclick="nxtQ('1')">Pq</button>
+                    <button class="c" onclick="nxtQ('2')">Por que</button>
+                    <button class="d" onclick="nxtQ('3')">Porquê</button>
+                </div>
+            </div>
+
+            <div class="q q4">
+                <h1 class="question"><span class="qNumber"></span> Em qual período da tabela periódica o <br> Carbono
+                    está?
+                </h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Período 7</button>
+                    <button class="b" onclick="nxtQ('1')">Período menstrual</button>
+                    <button class="c" onclick="nxtQ('2')">Período Regencial</button>
+                    <button class="d" onclick="nxtQ('3')">Período 2</button>
+                </div>
+            </div>
+
+            <div class="q q5">
+                <h1 class="question"><span class="qNumber"></span> Meu avô tem 4 filhos. Cada filho tem 4 filhos.
+                    Quantos primos eu tenho?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">16</button>
+                    <button class="b" onclick="nxtQ('1')">12</button>
+                    <button class="c" onclick="nxtQ('2')">8 e um ramerti</button>
+                    <button class="d" onclick="nxtQ('3')">10</button>
+                </div>
+            </div>
+
+            <div class="q q6">
+                <h1 class="question"><span class="qNumber"></span> Qual das alternativas abaixo se refere a um tipo de
+                    ligação de carbono:</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Detergente</button>
+                    <button class="b" onclick="nxtQ('1')">Insuturado</button>
+                    <button class="c" onclick="nxtQ('2')">Saturado</button>
+                    <button class="d" onclick="nxtQ('3')">Divergente</button>
+                </div>
+            </div>
+
+            <div class="q q7">
+                <h1 class="question"><span class="qNumber"></span> Qual foi o ator mais bem pago no ano <br> de 2016?
+                </h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Jackie Chan</button>
+                    <button class="b" onclick="nxtQ('1')">Robert Downey Jr.</button>
+                    <button class="c" onclick="nxtQ('2')">Dwayne Johnson</button>
+                    <button class="d" onclick="nxtQ('3')">Stênio Garcia</button>
+                </div>
+            </div>
+
+            <div class="q q8">
+                <h1 class="question"><span class="qNumber omg"></span> Um byte é composto de quantos <br> bits?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">7</button>
+                    <button class="b" onclick="nxtQ('1')">100</button>
+                    <button class="c" onclick="nxtQ('2')">16</button>
+                    <button class="d" onclick="nxtQ('3')">Sim</button>
+                </div>
+            </div>
+
+            <div class="q q9">
+                <h1 class="question"><span class="qNumber"></span> Quais são algumas das características das esculturas
+                    do estilo barroco?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Cores escuras, muita sombra e surrealismo</button>
+                    <button class="b" onclick="nxtQ('1')">Cenas bíblicas e ódio ao satanás</button>
+                    <button class="c" onclick="nxtQ('2')">Surrealismo, sombras e romantismo</button>
+                    <button class="d" onclick="nxtQ('3')">Realismo, dramaticidade e luz</button>
+                </div>
+            </div>
+
+            <div class="q q10">
+                <h1 class="question"><span class="qNumber"></span> Qual o melhor time de todo o <br> MUNDO?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">paysandu</button>
+                    <button class="b" onclick="nxtQ('1')">Tiltados</button>
+                    <button class="c" onclick="nxtQ('2')">Grêmio</button>
+                    <button class="d" onclick="nxtQ('3')">Inter</button>
+                </div>
+            </div>
+
+            <div class="q q11">
+                <h1 class="question"><span class="qNumber"></span> Em qual alternativa há <br> três oito três zero?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">880080</button>
+                    <button class="b" onclick="nxtQ('1')">888000</button>
+                    <button class="c" onclick="nxtQ('2')">3830</button>
+                    <button class="d" onclick="nxtQ('3')">38000</button>
+                </div>
+            </div>
+
+            <div class="q q12">
+                <h1 class="question"><span class="qNumber"></span> Com quantos paus se faz <br> uma <a
+                        href="http://www.canoagem.org.br/pagina/index/nome/regulamento/id/152#gsc.tab=0">canoa?</a></h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">√(832-56+(25*0,659))</button>
+                    <button class="b" onclick="nxtQ('1')">Depende do tamanho</button>
+                    <button class="c" onclick="nxtQ('2')">1/2</button>
+                    <button class="d" onclick="nxtQ('3')">Um</button>
+                </div>
+            </div>
+
+            <div class="q q13">
+                <h1 class="question"><span class="qNumber"></span> Em que questão <br> você está?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">13</button>
+                    <button class="b" onclick="nxtQ('1')">14</button>
+                    <button class="c" onclick="nxtQ('2')">18</button>
+                    <button class="d" onclick="nxtQ('3')">12</button>
+                </div>
+            </div>
+
+            <div class="q q14">
+                <h1 class="question"><span class="qNumber"></span> Qual a cor do <br> céu?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">rgb(153, 128, 0)</button>
+                    <button class="b" onclick="nxtQ('1')">#87ceeb</button>
+                    <button class="c" onclick="nxtQ('2')">hsl(341, 100%, 30%)</button>
+                    <button class="d" onclick="nxtQ('3')">#26f235</button>
+                </div>
+            </div>
+
+            <div class="q q15">
+                <h1 class="question"><span class="qNumber"></span> Quem matou <br> <span class="htl">Hitler?</span></h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">O Mussoumano</button>
+                    <button class="b" onclick="nxtQ('1')">Vincent Andrew Schiavelli</button>
+                    <button class="c" onclick="nxtQ('2')">O Stalin</button>
+                    <button class="d" onclick="nxtQ('3')">Celso Russomanno</button>
+                </div>
+            </div>
+
+            <div class="q q16">
+                <h1 class="question"><span class="qNumber"></span> Como obter <br> Grafeno?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Grafite ralado + Detergente</button>
+                    <button class="b" onclick="nxtQ('1')">Sabão + Giz de cera + Liquidificador Walita</button>
+                    <button class="c" onclick="nxtQ('2')">Pergunta pro Igor</button>
+                    <button class="d" onclick="nxtQ('3')">Água + cera de ouvido</button>
+                </div>
+            </div>
+
+            <div class="q q17">
+                <h1 class="question"><span class="qNumber omg"></span> Qual a continuação? <br> MaMaAaAaAaAAA</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">UUUUUuuuUUUU</button>
+                    <button class="b" onclick="nxtQ('1')"><a
+                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PLEurGEf3xZT3Mo8rZOhds4qqYC_aJy706&index=11&ab_channel=RickAstleyVEVO">NEVER
+                            GONNA GIVE YOU UP</a></button>
+                    <button class="c" onclick="nxtQ('2')"><a
+                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PLEurGEf3xZT3Mo8rZOhds4qqYC_aJy706&index=11&ab_channel=RickAstleyVEVO">NEVER
+                            GONNA LET YOU DOWN</a></button>
+                    <button class="d" onclick="nxtQ('3')">Ino Nacional do Avaí</button>
+                </div>
+            </div>
+
+            <div class="q q18">
+                <h1 class="question"><span class="qNumber omg"></span> Qual a função do Prompt no JavaScript?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Condição</button>
+                    <button class="b" onclick="nxtQ('1')">Variável</button>
+                    <button class="c" onclick="nxtQ('2')">Uma caixa de diálogo ao topo da tela</button>
+                    <button class="d" onclick="nxtQ('3')">Código necessário para iniciar um Array</button>
+                </div>
+            </div>
+
+            <div class="q q19">
+                <h1 class="question"><span class="qNumber"></span> Da copa de qual ano são estes mascotes?</h1>
+                <img src="./assets/img/MascoteCopa.png" alt="aqueles bixo estranho">
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Coreia do Sul - Japão (2002)</button>
+                    <button class="b" onclick="nxtQ('1')">Argentina (1978)</button>
+                    <button class="c" onclick="nxtQ('2')">Itália (1990)</button>
+                    <button class="d" onclick="nxtQ('3')">Espanha (1982)</button>
+                </div>
+            </div>
+
+            <div class="q q20">
+                <h1 class="question"><span class="qNumber"></span> Qual era a resposta da <br> pergunta 5?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Stalin</button>
+                    <button class="b" onclick="nxtQ('1')">12</button>
+                    <button class="c" onclick="nxtQ('2')">Jackie Chan</button>
+                    <button class="d" onclick="nxtQ('3')">Enzimas</button>
+                </div>
+            </div>
+
+            <div class="q q21">
+                <h1 class="question"><span class="qNumber"></span> Qual a palavra descriptografada a partir do código a
+                    seguir?</h1>
+                <audio src="./assets/audio/morse.wav" controls></audio>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">DVD</button>
+                    <button class="b" onclick="nxtQ('1')">CSS</button>
+                    <button class="c" onclick="nxtQ('2')">OVO</button>
+                    <button class="d" onclick="nxtQ('3')">SOS</button>
+                </div>
+            </div>
+            <div class="q q22">
+                <h1 class="question"><span class="qNumber"></span> O que é isso?</h1>
+                <img src="./assets/img/codigo.png" alt="é braia, certeza!">
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Braille</button>
+                    <button class="b" onclick="nxtQ('1')">Brainly</button>
+                    <button class="c" onclick="nxtQ('2')">Braia</button>
+                    <button class="d" onclick="nxtQ('3')">Peças de dominó</button>
+                </div>
+            </div>
+            <div class="q q23">
+                <h1 class="question"><span class="qNumber"></span> Qual o nome dessa personagem em Portugal?</h1>
+                <img src="./assets/img/Austin.png" alt="austin?">
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Austin</button>
+                    <button class="b" onclick="nxtQ('1')">Augostinho</button>
+                    <button class="c" onclick="nxtQ('2')">Alfonso</button>
+                    <button class="d" onclick="nxtQ('3')">Antônio</button>
+                </div>
+            </div>
+            <div class="q q24">
+                <h1 class="question"><span class="qNumber"></span> Qual lugar está indicado por esta coordenada:
+                    -27.548072, -48.498592?</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">1D World México, Cidade do México, México.</button>
+                    <button class="b" onclick="nxtQ('1')">Senai CTAI, Florianópolis, Brasil.</button>
+                    <button class="c" onclick="nxtQ('2')">KFC Mongólia, Ulaanbaatar, Mongólia.</button>
+                    <button class="d" onclick="nxtQ('3')">Magic Kingdom World Dr. Lake Buena Vista, EUA.</button>
+                </div>
+            </div>
+            <div class="q q25">
+                <h1 class="question"><span class="qNumber"></span> Qual o nome da única rádio localizada em: Cook
+                    Islands? (Dica: http://radio.garden/)</h1>
+                <div class="answers">
+                    <button class="a" onclick="nxtQ('0')">Anime Para Ti</button>
+                    <button class="b" onclick="nxtQ('1')">Lindin FM</button>
+                    <button class="c" onclick="nxtQ('2')">Hiti FM</button>
+                    <button class="d" onclick="nxtQ('3')">88 FM</button>
+                </div>
+            </div>
+
+            <div class="q q26">
+                <h1 class="question">PARABENS VOCÊ GANHOU!!!! <br><br><br> 🤩🤩🤩 <br><br></h1>
+                <div class="answers">
+                    <button class="gObtn" onclick="gameOver(1)">Recomeçar</button>
+                    <button class="gObtn" onclick="gameOver(0)"><a
+                            href="https://www.youtube.com/watch?v=nF7lv1gfP1Q&ab_channel=shittyflute">Sair</a></button>
+                </div>
+            </div>
+
+            <div class="reset">
+                <i class="fas fa-circle"></i>
+            </div>
+
+        </div>
+
+        <div class="popUps">
+            <div class="popBody">
+                <h1 class="popTitle"></h1>
+                <p class="popDesc"></p>
+                <button onclick="closePopUp()">Ok!</button>
+            </div>
+        </div>
+
+        <div class="gameOver">
+            <h1 class="question">GameOver! <br> <span class="ascii"></span></h1>
+            <div class="answers">
+                <button class="gObtn" onclick="gameOver(1)">Recomeçar</button>
+                <button class="gObtn" onclick="gameOver(0)"><a
+                        href="https://www.youtube.com/watch?v=nF7lv1gfP1Q&ab_channel=shittyflute">Sair</a></button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/102b34abfc.js" crossorigin="anonymous"></script>
+    <script src="assets/dist/easytimer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="./js/asw.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/gameOver.js"></script>
+    <script src="./js/timer&aos.js"></script>
+</body>
+</html>
