@@ -10,4 +10,6 @@ timer.addEventListener('reset', function (e) {
     $('#chronoExample .values').html(timer.getTimeValues().toString());
 });
 
-AOS.init();
+AOS.init({
+    duration: 800
+});

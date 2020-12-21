@@ -1,5 +1,5 @@
 $bk: #61cd76;
-$txt: #262626;
+$txt: #363636;
 
 *,
 html {
@@ -89,12 +89,12 @@ nav.nav {
 .menu {
   .section.s1 {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 
     margin: 0;
 
     h1 {
-      width: 50%;
+      width: 40%;
       font-size: 3.5em;
       text-align: left;
       font-weight: 600;
@@ -151,11 +151,25 @@ nav.nav {
     p {
       text-align: center;
       justify-content: center;
-      font-size: 1.5em;
-      margin: 2em 20% 0 20%;
+      font-size: 1.6em;
+      margin: 1.5em 20% 0 20%;
+      font-weight: 500;
+      span.kkk {
+        font-size: 0.4em;
+      }
+      .min {
+        font-weight: 400;
+        font-size: 0.8em;
+      }
+      .super {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #61cd76;
+        font-weight: 900;
+      }
     }
     button {
-      margin: 4em 35%;
+      margin: 3em 35%;
       text-align: center;
       width: 30%;
       height: 5em;
@@ -176,13 +190,13 @@ nav.nav {
 
   .section.s3 {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
 
     h1.mainTitle {
       font-size: 3em;
       font-weight: 900;
       text-align: center;
-      margin: 1em 12%;
+      margin: 1em 12% 2em 12%;
     }
 
     .comContainer {
@@ -199,19 +213,25 @@ nav.nav {
         p {
           margin-top: 0;
           margin-bottom: 0.8em;
+        b {
+          font-weight: 800;
+          color: #363636;
+        }
         }
         span {
-          font-weight: bold;
+          font-weight: 600;
           position: relative;
           margin-left: 15px;
+          font-style: italic;
 
           &:before {
             content: "";
             position: absolute;
             height: 1px;
             width: 10px;
-            border-bottom: 1px solid #262626;
-            top: 10px;
+            border-radius: 250px;
+            border-bottom: 2px solid $txt;
+            top: 12px;
             left: -15px;
           }
         }
@@ -226,7 +246,7 @@ nav.nav {
     transform: translate(-80%, -50%) scale(1);
   }
   25% {
-    color: #262626;
+    color: $txt;
     transform: translate(-80%, -50%) scale(0.9) rotateY(0deg);
   }
   50% {
@@ -234,7 +254,7 @@ nav.nav {
     transform: translate(-80%, -50%) scale(1);
   }
   75% {
-    color: #262626;
+    color: $txt;
     transform: translate(-80%, -50%) scale(0.9) rotateY(180deg);
   }
   100% {

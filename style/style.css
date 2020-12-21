@@ -6,7 +6,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: #262626;
+  color: #363636;
   outline: none;
 }
 
@@ -20,7 +20,7 @@ body {
   margin: 0;
   background-color: #ebebeb;
   font-family: "Poppins", sans-serif;
-  color: #262626;
+  color: #363636;
   overflow-x: hidden;
 }
 
@@ -69,11 +69,11 @@ nav.nav .logo i {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.2em;
-  color: #262626;
+  color: #363636;
 }
 
 nav.nav .logo:hover {
-  color: #262626;
+  color: #363636;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -93,7 +93,7 @@ nav.nav ul.navBar {
 
 nav.nav ul.navBar a {
   text-decoration: none;
-  color: #262626;
+  color: #363636;
 }
 
 nav.nav ul.navBar a li.navLinks {
@@ -109,12 +109,12 @@ nav.nav ul.navBar a li.navLinks:hover {
 
 .menu .section.s1 {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   margin: 0;
 }
 
 .menu .section.s1 h1 {
-  width: 50%;
+  width: 40%;
   font-size: 3.5em;
   text-align: left;
   font-weight: 600;
@@ -183,12 +183,29 @@ nav.nav ul.navBar a li.navLinks:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.5em;
-  margin: 2em 20% 0 20%;
+  font-size: 1.6em;
+  margin: 1.5em 20% 0 20%;
+  font-weight: 500;
+}
+
+.menu .section.s2 p span.kkk {
+  font-size: 0.4em;
+}
+
+.menu .section.s2 p .min {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.menu .section.s2 p .super {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #61cd76;
+  font-weight: 900;
 }
 
 .menu .section.s2 button {
-  margin: 4em 35%;
+  margin: 3em 35%;
   text-align: center;
   width: 30%;
   height: 5em;
@@ -212,14 +229,14 @@ nav.nav ul.navBar a li.navLinks:hover {
 
 .menu .section.s3 {
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
 }
 
 .menu .section.s3 h1.mainTitle {
   font-size: 3em;
   font-weight: 900;
   text-align: center;
-  margin: 1em 12%;
+  margin: 1em 12% 2em 12%;
 }
 
 .menu .section.s3 .comContainer {
@@ -245,10 +262,16 @@ nav.nav ul.navBar a li.navLinks:hover {
   margin-bottom: 0.8em;
 }
 
+.menu .section.s3 .comContainer .comment p b {
+  font-weight: 800;
+  color: #363636;
+}
+
 .menu .section.s3 .comContainer .comment span {
-  font-weight: bold;
+  font-weight: 600;
   position: relative;
   margin-left: 15px;
+  font-style: italic;
 }
 
 .menu .section.s3 .comContainer .comment span:before {
@@ -256,8 +279,9 @@ nav.nav ul.navBar a li.navLinks:hover {
   position: absolute;
   height: 1px;
   width: 10px;
-  border-bottom: 1px solid #262626;
-  top: 10px;
+  border-radius: 250px;
+  border-bottom: 2px solid #363636;
+  top: 12px;
   left: -15px;
 }
 
@@ -268,7 +292,7 @@ nav.nav ul.navBar a li.navLinks:hover {
             transform: translate(-80%, -50%) scale(1);
   }
   25% {
-    color: #262626;
+    color: #363636;
     -webkit-transform: translate(-80%, -50%) scale(0.9) rotateY(0deg);
             transform: translate(-80%, -50%) scale(0.9) rotateY(0deg);
   }
@@ -278,7 +302,7 @@ nav.nav ul.navBar a li.navLinks:hover {
             transform: translate(-80%, -50%) scale(1);
   }
   75% {
-    color: #262626;
+    color: #363636;
     -webkit-transform: translate(-80%, -50%) scale(0.9) rotateY(180deg);
             transform: translate(-80%, -50%) scale(0.9) rotateY(180deg);
   }
@@ -296,7 +320,7 @@ nav.nav ul.navBar a li.navLinks:hover {
             transform: translate(-80%, -50%) scale(1);
   }
   25% {
-    color: #262626;
+    color: #363636;
     -webkit-transform: translate(-80%, -50%) scale(0.9) rotateY(0deg);
             transform: translate(-80%, -50%) scale(0.9) rotateY(0deg);
   }
@@ -306,7 +330,7 @@ nav.nav ul.navBar a li.navLinks:hover {
             transform: translate(-80%, -50%) scale(1);
   }
   75% {
-    color: #262626;
+    color: #363636;
     -webkit-transform: translate(-80%, -50%) scale(0.9) rotateY(180deg);
             transform: translate(-80%, -50%) scale(0.9) rotateY(180deg);
   }
@@ -595,13 +619,13 @@ button:hover {
 @-webkit-keyframes error {
   0% {
     background-color: #61cd76;
-    color: #262626;
+    color: #363636;
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
   }
   30% {
     background-color: #61cd76;
-    color: #262626;
+    color: #363636;
   }
   100% {
     background-color: #ff373c;
@@ -614,13 +638,13 @@ button:hover {
 @keyframes error {
   0% {
     background-color: #61cd76;
-    color: #262626;
+    color: #363636;
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
   }
   30% {
     background-color: #61cd76;
-    color: #262626;
+    color: #363636;
   }
   100% {
     background-color: #ff373c;

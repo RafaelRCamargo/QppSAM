@@ -104,3 +104,9 @@ let jogar = () => {
     document.querySelector(".menu").style.display = "none"
    document.querySelector(".q.q1").style.display= "inline"
 }
+
+let menu = () => {
+    document.querySelector(".q").style.display = "none"
+    document.querySelector(".menu").style.display = "inline"
+}
+
